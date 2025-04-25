@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Otakudesu Clone - Streaming Anime Subtitle Indonesia</title>
-    <meta name="description" content="Clone of Otakudesu website for streaming anime with Indonesian subtitles." />
-    <meta name="keywords" content="Otakudesu, streaming anime, anime subtitle Indonesia, nonton anime" />
-    <meta name="author" content="Latip176" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="icon" href="./src/img/kanime-icon.jpg" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>KANIME - Streaming Anime Subtitle Indonesia</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="KANIME adalah platform terbaik untuk streaming anime dengan subtitle Indonesia. Nikmati berbagai genre anime favoritmu secara gratis.">
+    <meta name="keywords" content="KANIME, streaming anime, anime subtitle Indonesia, nonton anime, anime terbaru, anime populer, streaming gratis">
+    <meta name="author" content="Latip176">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="KANIME - Streaming Anime Subtitle Indonesia">
+    <meta property="og:description" content="KANIME adalah platform terbaik untuk streaming anime dengan subtitle Indonesia. Nikmati berbagai genre anime favoritmu secara gratis.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.kanime.my.id">
+    <meta property="og:image" content="https://www.kanime.my.id/src/img/kanime-og-image.jpg">
+    <meta property="og:site_name" content="KANIME">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KANIME - Streaming Anime Subtitle Indonesia">
+    <meta name="twitter:description" content="KANIME adalah platform terbaik untuk streaming anime dengan subtitle Indonesia. Nikmati berbagai genre anime favoritmu secara gratis.">
+    <meta name="twitter:image" content="https://www.kanime.my.id/src/img/kanime-og-image.jpg">
+    <meta name="twitter:site" content="@KANIME">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="icon" href="./src/img/kanime-icon.jpg" type="image/x-icon" id="kanime-icon">
+    
     <script src="./src/js/controls.js" type="module"></script>
     <script src="./src/js/style.js" type="module"></script>
+    
     <script defer src="https://kit.fontawesome.com/23b0acc186.js" crossorigin="anonymous" async></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <img src="./src/img/kanime-icon.jpg" alt="Otakudesu Logo" />
-                <span>Otakudesu</span>
-            </a>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#ongoing" class="nav-link">Ongoing</a></li>
-                    <li><a href="#genres" class="nav-link">Genres</a></li>
-                    <li><a href="#complete" class="nav-link">Complete</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                </ul>
-            </nav>
-            <div class="search-container">
-                <input type="search" id="search" class="search-input" placeholder="Cari anime favorite kamu..." autocomplete="off" />
-                <button id="search-btn"><i class="fas fa-search"></i></button>
+    <div class="navbar-top">
+        <div class="nav-content">
+            <div>
+                <span class="nav-brand" style="font-size: 20px; color: white; font-weight: bold;"><span style="color: #F31D3E; text-shadow: 0 0 10px #F31D3E, 0 0 20px #F31D3E, 0 0 30px #F31D3E;">KA</span>NIME</span>
+            </div>
+            <div>
+                <input type="search" name="search" id="search" class="search-inp" style="width: 15rem;" autocomplete="off" placeholder="Cari anime favorite kamu...">
+                <div class="icon">
+                    <i class="fas fa-search" style="color: #fff"></i>
+                    <i class="fas fa-times" style="color: #FF4316"></i>
+                </div>
             </div>
         </div>
-    </header>
-
+    </div>
+    
     <div class="load">
         <div class="loader"></div>
     </div>
     
     <div class="content"></div>
-
-    <footer class="footer">
-        <div class="container footer-container">
-            <p>© 2025 OtakuDesu</p>
+    
+    <div class="navbar-bottom">
+        <div class="nav-content">
+            <ul>
+                <li><a id="home" href="#home"><i class="fas fa-home"></i></a></li>
+                <li><a id="ongoing" href="#ongoing"><i class="fas fa-clock"></i></a></li>
+                <li><a id="genres" href="#genres"><i class="fas fa-network-wired"></i></a></li>
+                <li><a id="complete" href="#complete"><i class="fas fa-list"></i></a></li>
+                <li><a id="about" href="#about"><i class="fas fa-info-circle"></i></a></li>
+            </ul>
         </div>
+    </div>
+    
+    <footer class="footer">
+        <p>© 2024 Latip176</p>
     </footer>
 </body>
 </html>
