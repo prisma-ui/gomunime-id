@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Otakudesu Clone - Streaming Anime Subtitle Indonesia</title>
+    <meta name="description" content="Clone of Otakudesu website for streaming anime with Indonesian subtitles." />
+    <meta name="keywords" content="Otakudesu, streaming anime, anime subtitle Indonesia, nonton anime" />
+    <meta name="author" content="Latip176" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="icon" href="./src/img/kanime-icon.jpg" type="image/x-icon" />
+    <script src="./src/js/controls.js" type="module"></script>
+    <script src="./src/js/style.js" type="module"></script>
+    <script defer src="https://kit.fontawesome.com/23b0acc186.js" crossorigin="anonymous" async></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="./src/img/kanime-icon.jpg" alt="Otakudesu Logo" />
+                <span>Otakudesu</span>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#ongoing" class="nav-link">Ongoing</a></li>
+                    <li><a href="#genres" class="nav-link">Genres</a></li>
+                    <li><a href="#complete" class="nav-link">Complete</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="search" id="search" class="search-input" placeholder="Cari anime favorite kamu..." autocomplete="off" />
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="load">
+            <div class="loader"></div>
+        </div>
+        
+        <div class="content"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>© 2025 OtakuDesu</p>
+        </div>
+    </footer>
+</body>
+</html>
